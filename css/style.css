@@ -1,0 +1,101 @@
+@charset "utf-8";
+#navbar {padding-top:50px;}
+.navbar {border:none;}
+.navbar-default .navbar-brand:hover{color:black;}
+.row img {width:100%;height:auto}
+
+/* 區塊高 行高 文字 設定 */
+.line-style-01{
+	margin-bottom:30px;
+	line-height:2;
+	font-size:1.1em;
+}
+
+/* 首頁推薦活動外框 */
+.thumbnail-01{
+	display: block;
+	padding: 5px;
+	margin-bottom: 20px;
+	background-color:rgba(255,255,255,0.7);
+	border: 1px solid rgba(200,200,200,0.5);
+	border-radius: 4px;
+	transition: all 0.2s ease-in-out 0s;
+}
+/* 白色水平線用 */
+.white-01 {border-color:white;border-width:medium;}
+
+/* 媒體區塊高距 */
+.my-media-01 {margin-bottom:20px;}
+
+/* hover動畫 */
+.my-media-01 a img:hover {transform:scale(1.1);}
+.my-media-01 a img {transition:all 0.3s ease 0s;width:100%;}
+.my-media-01 a {overflow:hidden;display:block;}
+
+/* hover動畫 */
+.thumbnail img:hover {transform:scale(1.1);}
+.thumbnail img {transition:all 0.3s ease 0s;width:100%;}
+.thumbnail {overflow:hidden;}
+
+/*--回到頂端--*/
+.gotop {
+	padding-top:10px;
+	color:white;
+	display:none;
+	position:fixed;
+	right:10px;
+	bottom:10px;
+	z-index:20;
+	width:40px;
+	height:40px;
+	border-radius:4px;
+	background-color: rgba(0, 0, 0, 0.4);
+	margin:0 auto;
+	text-align:center;
+}
+.gotop:hover {background-color: rgba(0, 0, 0, 0.9);}
+.btn-default {font-size:1.5em;}
+.current-weather {font-size:7em;padding-top:30px;}
+
+.image-box{display:block;position:relative;}
+.image-box .image-container{
+	color:black;
+	background-color:rgba(255,255,255,0.4);
+	height:20%;
+	width:100%;
+	position:absolute;
+	left:0%;
+	top:80%;
+}
+.image-box .image-container img {height:100%;width:auto;}
+.navbar-right div {float:left; height:30px; width:30px; margin:10px 5px;}
+.navbar-right div a img{width:100%;}
+@media only screen and (min-width: 992px){
+	.thumbnail-01{
+		position: relative;
+		height: 573px;
+	}
+	.thumbnail-01-p{
+		width: 100%;
+		padding: 0 5px 0;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.image-box a .image-text{padding-top:5px;font-size:1.5em;}
+	.current-weather {font-size:5em;}
+	.btn-default {width:100%;}
+}
+@media only screen and (max-width: 480px) {
+	.image-box a .image-text{padding-top:0px;font-size:1em;}
+	h1{font-size:1.5em;}
+	h2{font-size:1.3em;}
+	h3{font-size:1.1em;}
+	.btn-default {font-size:1.2em; width:100%;}
+	.current-weather {font-size:4em;}
+}
+@media only screen and (max-width: 360px) {
+	.image-box a .image-text{font-size:0.9em;}
+}
